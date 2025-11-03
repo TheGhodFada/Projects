@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>GhodFada — Projects</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome for fallback icons (github, insta, phone) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Full-screen loader -->
+<div id="loader" aria-hidden="false">
+  <div class="loader-inner" role="status" aria-label="Loading">
+    <div class="loader-dot"></div>
+    <div class="loader-dot"></div>
+    <div class="loader-dot"></div>
+  </div>
+</div>
+
+<div class="wrap" id="app" aria-live="polite">
+  <header class="fade-up">
+    <div class="brand" style="gap:14px;">
+      <div class="logo" aria-hidden="true">GF</div>
+      <div class="texts">
+        <h1>GhodFada</h1>
+        <p>Frontend Developer & Designer — Crafting clean and creative web experiences</p>
+      </div>
+    </div>
+
+    <!-- top actions (phone + links) -->
+    <div class="top-actions" role="toolbar" aria-label="Top actions">
+      <a class="icon-btn" href="tel:+2349037288167" title="Call 09037288167" aria-label="Call"><i class="fa-solid fa-phone"></i></a>
+
+      <a class="icon-btn" href="https://github.com/TheGhodFada" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+
+      <!-- Inline SVG X icon to avoid text fallback -->
+      <a class="icon-btn" href="https://x.com/theghodfada" target="_blank" rel="noopener" title="X / Twitter" aria-label="X Twitter">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+          <path d="M23 3.00005c-.8.35-1.6.59-2.4.7.9-.52 1.5-1.3 1.8-2.24-.8.47-1.7.82-2.7 1.02C18.8 1.55 17.5 1 16 1c-2.7 0-4.8 2.17-4.8 4.84 0 .38.04.75.12 1.11C7.7 6.81 4.1 4.98 1.7 2.15c-.42.73-.66 1.58-.66 2.48 0 1.71.86 3.22 2.16 4.11-.8-.03-1.55-.25-2.2-.62v.06c0 2.32 1.6 4.25 3.73 4.69-.39.1-.8.15-1.22.15-.3 0-.6-.03-.9-.08.6 1.95 2.34 3.37 4.4 3.41C6.2 17.9 4.5 18.7 2.6 18.7c-.39 0-.76-.02-1.14-.07 2.18 1.4 4.77 2.22 7.56 2.22 9.06 0 14.02-7.55 14.02-14.1v-.64c.96-.7 1.8-1.6 2.46-2.6z" fill="currentColor" />
+        </svg>
+      </a>
+
+      <a class="icon-btn" href="https://www.instagram.com/theghodfada/" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+  </header>
+
+  <main class="fade-up" id="mainPanel">
+    <section style="display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:14px; flex-wrap:wrap;">
+      <div>
+        <div style="font-size:13px; color:var(--muted); font-weight:600; letter-spacing:0.6px;">PROJECTS</div>
+        <div style="font-size:12px; color:var(--muted); margin-top:7px;">Tap a project to open a live preview. </div>
+      </div>
+
+      <div style="display:flex; gap:10px; align-items:center;">
+        <div style="font-size:13px; color:var(--muted)">Dark • Classy gold glow • No Bootstrap</div>
+      </div>
+    </section>
+
+    <section class="grid" id="projectsGrid" aria-label="Project gallery">
+      <!-- Project 1 -->
+      <article class="card fade-up" data-live="https://theghodfada.github.io/Fynix-Trade/" tabindex="0" aria-label="Project: Example Project">
+        <div class="thumb" aria-hidden="true">
+          <img src="img/fynix1.png" alt="Project preview placeholder">
+        </div>
+
+        <div class="card-body">
+          <div class="meta">
+            <div class="title">Fynix Trade</div>
+            <div class="tag">Demo • Responsive</div>
+          </div>
+
+          <div class="desc">A sleek, responsive trading platform built for modern traders.
+         </div>
+
+          <div class="card-actions">
+            <a class="btn" href="https://theghodfada.github.io/Fynix-Trade/" target="_blank" rel="noopener" data-live="https://theghodfada.github.io/Fynix-Trade/" aria-label="Open live preview">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 3h7v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 14L21 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 21H3V3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Live Preview
+            </a>
+
+            <button class="more-btn" aria-label="More info" title="More info" onclick="openProjectDetails(this)">
+              <i class="fa-solid fa-ellipsis"></i>
+              <span class="sr-only">More</span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="card fade-up" data-live="https://theghodfada.github.io/Portfolio/" tabindex="0" aria-label="Project: Portfolio">
+        <div class="thumb" aria-hidden="true">
+          <img src="img/portfolio1.png" alt="Portfolio preview placeholder">
+        </div>
+
+        <div class="card-body">
+          <div class="meta">
+            <div class="title">Sleek Portfolio </div>
+            <div class="tag">HTML • CSS • JS </div>
+          </div>
+
+          <div class="desc">Two moods, one portfolio ⚡ Dark or light — your vibe, your view.
+            </div>
+
+          <div class="card-actions">
+            <a class="btn" href="https://theghodfada.github.io/Portfolio/" target="_blank" rel="noopener" data-live="https://theghodfada.github.io/Portfolio/" aria-label="Open live preview">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 3h7v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 14L21 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 21H3V3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Live Preview
+            </a>
+
+            <button class="more-btn" aria-label="More info" title="More info" onclick="openProjectDetails(this)">
+              <i class="fa-solid fa-ellipsis"></i>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="card fade-up" data-live="https://theghodfada.github.io/Projects/" tabindex="0" aria-label="Project: Shop UI">
+        <div class="thumb" aria-hidden="true">
+          <img src="img/project.png" alt="Shop UI preview placeholder">
+        </div>
+
+        <div class="card-body">
+          <div class="meta">
+            <div class="title">Project Overview</div>
+            <div class="tag">UI • Concept • Demo</div>
+          </div>
+
+          <div class="desc">A creative space built to display my works in design and frontend development.</div>
+
+          <div class="card-actions">
+            <a class="btn" href="https://theghodfada.github.io/Projects/" target="_blank" rel="noopener" data-live="https://theghodfada.github.io/Projects/" aria-label="Open live preview">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 3h7v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 14L21 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 21H3V3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Live Preview
+            </a>
+
+            <button class="more-btn" aria-label="More info" title="More info" onclick="openProjectDetails(this)">
+              <i class="fa-solid fa-ellipsis"></i>
+            </button>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <footer>
+      <div>
+        <strong>GhodFada</strong> <span style="color:var(--muted)">• Frontend Developer & Designer</span>
+        <div style="color:var(--muted); font-size:12px; margin-top:8px;">Phone: <a class="link" href="tel:+2349037288167">09037288167</a></div>
+      </div>
+
+      <div class="links">
+        <a class="link" href="https://github.com/TheGhodFada" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a class="link" href="https://x.com/theghodfada" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i>Twitter</a>
+        <a class="link" href="https://www.instagram.com/theghodfada/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> Instagram</a>
+      </div>
+    </footer>
+  </main>
+
+  <button id="toTop" aria-label="Scroll to top">↑</button>
+</div>
+
+<!-- Modal for more details -->
+<div id="modal" role="dialog" aria-modal="true" aria-hidden="true" style="position:fixed; inset:0; display:grid; place-items:center; background:rgba(0,0,0,0.6); z-index:900; visibility:hidden; opacity:0; transition:opacity .18s;">
+  <div style="width:min(620px,94%); background:var(--panel); border-radius:12px; padding:18px; border:1px solid rgba(255,255,255,0.03); box-shadow:0 20px 60px rgba(0,0,0,0.7);">
+    <div style="display:flex; justify-content:space-between; align-items:center;">
+      <strong id="modalTitle">Project</strong>
+      <button onclick="closeModal()" style="background:transparent; color:var(--muted); border:none; font-size:20px; cursor:pointer;" aria-label="Close modal">&times;</button>
+    </div>
+    <p id="modalDesc" style="color:var(--muted); margin-top:10px; font-size:14px;"></p>
+    <div style="display:flex; gap:10px; margin-top:12px;">
+      <a id="modalOpen" class="btn" href="#" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 3h7v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 14L21 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 21H3V3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Open Live</a>
+      <button class="more-btn" onclick="closeModal()" aria-label="Close">Close</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  // ===== Loader logic (full-screen) =====
+  window.addEventListener('load', () => {
+    const loader = document.getElementById('loader');
+    // Keep loader for a short time for polish
+    setTimeout(() => {
+      loader.style.opacity = '0';
+      loader.style.visibility = 'hidden';
+      loader.setAttribute('aria-hidden', 'true');
+      // reveal fade-up elements
+      document.querySelectorAll('.fade-up').forEach((el, i) => {
+        setTimeout(() => el.classList.add('visible'), 80 * i);
+      });
+    }, 700);
+  });
+
+  // ===== Scroll-to-top button =====
+  const toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', () => { toTop.style.display = window.scrollY > 260 ? 'block' : 'none'; });
+  toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // ===== Live preview - anchors handle opening; we keep a guard message if they are placeholders =====
+  document.querySelectorAll('.btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const url = btn.dataset.live || btn.getAttribute('href');
+      if (!url || url === '#' || url.startsWith('data:')) {
+        e.preventDefault();
+        alert('Replace the link with your project URL to enable Live Preview.');
+      }
+      // otherwise allow normal anchor behavior (opens in new tab)
+    });
+  });
+
+  // ===== Modal logic for more info button =====
+  function openProjectDetails(el){
+    const card = el.closest('.card');
+    if(!card) return;
+    const title = card.querySelector('.title')?.textContent || 'Project';
+    const desc = card.querySelector('.desc')?.textContent || '';
+    const live = card.dataset.live || (card.querySelector('.btn')?.href) || '#';
+
+    const modal = document.getElementById('modal');
+    document.getElementById('modalTitle').textContent = title;
+    document.getElementById('modalDesc').textContent = desc;
+    const modalOpen = document.getElementById('modalOpen');
+    modalOpen.href = live;
+    modalOpen.dataset.live = live;
+
+    modal.style.visibility = 'visible';
+    modal.style.opacity = '1';
+    modal.setAttribute('aria-hidden', 'false');
+
+    // focus on the open link
+    modal.querySelector('a, button').focus();
+  }
+
+  function closeModal(){
+    const modal = document.getElementById('modal');
+    modal.style.opacity = '0';
+    modal.style.visibility = 'hidden';
+    modal.setAttribute('aria-hidden', 'true');
+  }
+
+  // keyboard accessibility: Enter opens live link on focused card
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        const url = card.dataset.live;
+        if (url) window.open(url, '_blank', 'noopener');
+      }
+    });
+
+    card.addEventListener('dblclick', () => {
+      const url = card.dataset.live;
+      if (url) window.open(url, '_blank', 'noopener');
+    });
+  });
+
+  // ===== Console Easter Egg (styled & friendly) =====
+  (function consoleEasterEgg(){
+    // styles: subtle gold-on-black card look
+    const styleLarge = [
+      'background: linear-gradient(90deg, rgba(212,162,74,0.12), rgba(212,162,74,0.04))',
+      'color: ' + getComputedStyle(document.documentElement).getPropertyValue('--gold') || '#d4a24a',
+      'padding: 12px 16px',
+      'border-radius: 8px',
+      'font-weight:700',
+      'font-size:12px'
+    ].join(';');
+
+    const styleBody = [
+      'color: ' + (getComputedStyle(document.documentElement).getPropertyValue('--muted') || '#9aa0a6'),
+      'font-size:12px',
+      'padding:6px 0 0 0'
+    ].join(';');
+
+    console.log('%c👋 Hello, curious developer!', styleLarge);
+    console.log('%cWelcome to GhodFada\'s portfolio — nice to see you here.', styleBody);
+    console.log('%cFeel free to explore the source code. If you use anything, please give proper credit. 🙏', styleBody);
+    // small ASCII flourish (subtle)
+    console.log('%c— — — — —', 'color: rgba(212,162,74,0.22);');
+
+    // Extra hidden message if console is opened after user action (click)
+    // We'll listen for a user click and then print a little framed tip
+    function extraMessage(){
+      console.log('%cTip: Replace image placeholders with your screenshots and set data-live or href to the project URL.', 'color:'+ (getComputedStyle(document.documentElement).getPropertyValue('--muted') || '#9aa0a6') + '; font-size:12px;');
+      // remove listener after first run
+      window.removeEventListener('click', extraMessage);
+    }
+    window.addEventListener('click', extraMessage);
+  })();
+
+  // ===== Small dev convenience: paste an image URL to quickly add a card =====
+  window.addEventListener('paste', (e) => {
+    try {
+      const text = (e.clipboardData || window.clipboardData).getData('text');
+      if (!text) return;
+      if (text.startsWith('http')) {
+        const grid = document.getElementById('projectsGrid');
+        const node = document.createElement('article');
+        node.className = 'card fade-up';
+        node.tabIndex = 0;
+        node.dataset.live = text;
+        node.innerHTML = `
+          <div class="thumb"><img src="${text}" alt="preview" /></div>
+          <div class="card-body">
+            <div class="meta"><div class="title">Pasted Project</div><div class="tag">Quick</div></div>
+            <div class="desc">Quickly added from clipboard. Edit title/desc and data-live to make permanent.</div>
+            <div class="card-actions">
+              <a class="btn" href="${text}" target="_blank" rel="noopener">Live Preview</a>
+              <button class="more-btn" aria-label="More info" onclick="openProjectDetails(this)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 6a2 2 0 100 4 2 2 0 000-4zm0 6a2 2 0 100 4 2 2 0 000-4zm0 6a2 2 0 100 4 2 2 0 000-4z" stroke="currentColor" stroke-width="0" /></svg></button>
+            </div>
+          </div>`;
+        grid.prepend(node);
+        setTimeout(()=> node.classList.add('visible'), 40);
+      }
+    } catch(e){ /* ignore errors */ }
+  });
+
+  // small polite animation triggers for initial load (if loader skipped)
+  document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(()=> {
+      document.querySelectorAll('.fade-up').forEach((el, i) => {
+        setTimeout(()=> el.classList.add('visible'), 70 * i);
+      });
+    }, 100);
+  });
+</script>
+</body>
+</html>
